@@ -1,0 +1,10 @@
+[Unit]
+Description=Simple Http Server
+
+[Service]
+Type=simple
+ExecStart=python3 /usr/bin/simplehttpserver.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

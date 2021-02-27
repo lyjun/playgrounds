@@ -1,0 +1,15 @@
+Source: simplehttpserver
+Maintainer: Yi-Jyun Lin <abc@test.com>
+Section: utils
+Priority: standard
+Build-Depends: debhelper (>= 9)
+Standards-Version: 1.0.0
+
+Package: simplehttpserver
+Architecture: all
+Section: utils
+Priority: standard
+Depends: ${shlibs:Depends}
+Recommends:
+Conflicts:
+Description: This is sample for packing debian package

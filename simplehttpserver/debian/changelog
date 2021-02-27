@@ -1,0 +1,6 @@
+simplehttpserver (1.0.0) unstable; urgency=medium
+
+  * Releae 1.0.0
+  Thsi is an example for packing debian package
+
+  -- Yi-Jyun Lin <abc@test.com> Mon, 1 Mar 2021 12:00:00 +0800  
