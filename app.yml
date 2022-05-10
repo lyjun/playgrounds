@@ -1,28 +1,11 @@
-version: '3'
-
+version: "3"
 services:
-  db:
-    image: mysql:5.7
+  web:
+    image: nginx
     volumes:
-      - db_data:/var/lib/mysql
-    restart: unless-stopped
-    environment:
-      MYSQL_ROOT_PASSWORD: somewordpress
-      MYSQL_DATABASE: wordpress
-      MYSQL_USER: wordpress
-      MYSQL_PASSWORD: wordpress
-
-  wordpress:
-    depends_on:
-      - db
-    image: wordpress:latest
+     - ./templates:/etc/nginx/templates
     ports:
-      - "10084:80"
-    restart: unless-stopped
+     - "8090:80"
     environment:
-      WORDPRESS_DB_HOST: db:3306
-      WORDPRESS_DB_USER: wordpress
-      WORDPRESS_DB_PASSWORD: wordpress
-
-volumes:
-  db_data:
+     - NGINX_HOST=foobar.com
+     - NGINX_PORT=80
