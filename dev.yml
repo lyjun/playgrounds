@@ -26,6 +26,20 @@
                 "operating-system"
             ],
             "image": "dorowu/ubuntu-desktop-lxde-vnc:focal"
+        },
+        {
+            "type": 3,
+            "title": "http server",
+            "description": "test",
+            "name": "hello-nginx",
+            "version": "1.0",
+            "logo": "",
+            "platform": "linux",
+            "categories": [
+                "http-server"
+            ],
+            "image": "nginx",
+            "composefile": "https://raw.githubusercontent.com/lyjun/playgrounds/main/app.yml"
         }
     ]
 }
